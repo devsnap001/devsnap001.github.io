@@ -1,1 +1,1 @@
-# devsnap001.github.io
+Privacy Policy Page

@@ -1,74 +1,172 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Privacy Policy</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DevDaddy 앱 모음</title>
+  <meta name="description" content="DevDaddy가 만들고 App Store와 Google Play에 출시한 앱을 소개합니다.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="DevDaddy 앱 모음">
+  <meta property="og:description" content="App Store와 Google Play에 출시한 앱을 소개합니다.">
+  <meta property="og:url" content="https://devsnap001.github.io/">
+  <meta property="og:image" content="https://devsnap001.github.io/icons/hushpop.png">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%234f46e5'/%3E%3Ctext x='16' y='21' font-family='Arial' font-size='14' font-weight='bold' fill='white' text-anchor='middle'%3EDD%3C/text%3E%3C/svg%3E">
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 0 20px;
-      color: #333;
+    :root { color-scheme: light dark; --bg:#f7f7f9; --surface:#fff; --line:#e8e8ee; --text:#1d1f2b; --sub:#646879; --chip:#f0f0f5; }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg:#121319; --surface:#1b1d25; --line:#2b2e39; --text:#eeeff4; --sub:#a6aabb; --chip:#272a35; }
     }
-    h2, h3 {
-      color: #2c3e50;
-    }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--bg); color:var(--text); font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Noto Sans KR",sans-serif; line-height:1.55; word-break:keep-all; overflow-wrap:break-word; }
+    a { color:inherit; }
+    a:focus-visible, button:focus-visible { outline:2px solid #5b5ff0; outline-offset:2px; }
+    .wrap { max-width:520px; margin:0 auto; padding:20px 16px 40px; }
+    .top { display:flex; justify-content:flex-end; }
+    #lang { font:inherit; font-size:12px; color:var(--sub); background:none; border:1px solid var(--line); border-radius:999px; padding:4px 12px; cursor:pointer; }
+    header { text-align:center; margin:8px 0 28px; }
+    h1 { font-size:22px; margin:0 0 4px; letter-spacing:-.01em; }
+    header p { margin:0; font-size:14px; color:var(--sub); }
+    ul { list-style:none; margin:0; padding:0; }
+    .apps { display:grid; gap:10px; }
+    .app { background:var(--surface); border:1px solid var(--line); border-radius:16px; }
+    .main { display:flex; align-items:center; gap:14px; padding:14px; text-decoration:none; border-radius:16px; }
+    .main:hover { background:var(--chip); }
+    .main img { flex:none; width:56px; height:56px; border-radius:23%; }
+    .info { flex:1; min-width:0; }
+    .info strong { display:block; font-size:15px; }
+    .info .desc { display:block; font-size:13px; color:var(--sub); }
+    .store { display:inline-block; margin-top:6px; padding:1px 9px; border-radius:999px; background:var(--chip); font-size:11px; font-weight:600; color:var(--sub); }
+    .arrow { color:var(--sub); font-size:20px; }
+    details { border-top:1px solid var(--line); }
+    summary { padding:9px 14px; font-size:12px; color:var(--sub); cursor:pointer; }
+    .shots { display:grid; grid-template-columns:repeat(3, 1fr); gap:8px; padding:2px 14px 10px; }
+    .shots img { display:block; width:100%; height:auto; border-radius:10px; border:1px solid var(--line); }
+    .policy { display:block; padding:0 14px 12px; font-size:12px; color:var(--sub); }
+    footer { margin-top:32px; text-align:center; font-size:12px; color:var(--sub); }
+    footer p { margin:6px 0; }
+    footer a { margin:0 6px; }
   </style>
 </head>
 <body>
-  <h2>Privacy Policy / 개인정보처리방침</h2>
+  <div class="wrap">
+    <div class="top"><button id="lang" type="button">EN</button></div>
+    <header>
+      <h1 data-en="Apps by DevDaddy">DevDaddy 앱 모음</h1>
+      <p data-en="Tap an app to open its store page.">누르면 스토어로 바로 가요</p>
+    </header>
+    <main>
+      <ul class="apps">
+        <li class="app">
+          <a class="main" href="https://apps.apple.com/app/id6837883987" target="_blank" rel="noopener">
+            <img src="icons/hushpop.png" alt="" width="56" height="56">
+            <span class="info">
+              <strong data-en="Hush Pop">Hush Pop</strong>
+              <span class="desc" data-en="ASMR fidget toys: wax balls, squishies and keycaps">왁뿌볼·말랑이·키캡을 즐기는 ASMR 피젯 토이</span>
+              <span class="store">App Store</span>
+            </span>
+            <span class="arrow" aria-hidden="true">›</span>
+          </a>
+          <details>
+            <summary data-en="Screenshots and privacy policy">화면 미리보기·개인정보처리방침</summary>
+            <div class="shots">
+              <img src="shots/hushpop-ko-2.jpg" data-en-src="shots/hushpop-en-2.jpg" alt="Hush Pop 말랑이 화면" data-en-alt="Hush Pop squishy screen" width="480" height="1043" loading="lazy">
+              <img src="shots/hushpop-ko-1.jpg" data-en-src="shots/hushpop-en-1.jpg" alt="Hush Pop 왁뿌볼 화면" data-en-alt="Hush Pop wax ball screen" width="480" height="1043" loading="lazy">
+              <img src="shots/hushpop-ko-3.jpg" data-en-src="shots/hushpop-en-3.jpg" alt="Hush Pop 키캡 화면" data-en-alt="Hush Pop keycap screen" width="480" height="1043" loading="lazy">
+            </div>
+            <a class="policy" href="https://devsnap001.github.io/HushPop/privacy.html" data-en="Privacy Policy">개인정보처리방침</a>
+          </details>
+        </li>
+        <li class="app">
+          <a class="main" href="https://apps.apple.com/app/id6835008418" target="_blank" rel="noopener">
+            <img src="icons/cleanpick.png" alt="" width="56" height="56">
+            <span class="info">
+              <strong data-en="CleanPick">CleanPick</strong>
+              <span class="desc" data-en="Pick only the photos you want to clean">지울 것만 골라 정리하는 사진 정리 앱</span>
+              <span class="store">App Store</span>
+            </span>
+            <span class="arrow" aria-hidden="true">›</span>
+          </a>
+          <details>
+            <summary data-en="Screenshots and privacy policy">화면 미리보기·개인정보처리방침</summary>
+            <div class="shots">
+              <img src="shots/cleanpick-ko-2.jpg" data-en-src="shots/cleanpick-en-2.jpg" alt="CleanPick 스와이프 정리 화면" data-en-alt="CleanPick swipe cleanup screen" width="480" height="1043" loading="lazy">
+              <img src="shots/cleanpick-ko-1.jpg" data-en-src="shots/cleanpick-en-1.jpg" alt="CleanPick 정리 홈 화면" data-en-alt="CleanPick cleanup home screen" width="480" height="1043" loading="lazy">
+              <img src="shots/cleanpick-ko-3.jpg" data-en-src="shots/cleanpick-en-3.jpg" alt="CleanPick 비슷한 사진 화면" data-en-alt="CleanPick similar photos screen" width="480" height="1043" loading="lazy">
+            </div>
+            <a class="policy" href="https://devsnap001.github.io/CleanPick/privacy" data-en="Privacy Policy">개인정보처리방침</a>
+          </details>
+        </li>
+        <li class="app">
+          <a class="main" href="https://play.google.com/store/apps/details?id=com.magnificent.averagingmaster" target="_blank" rel="noopener">
+            <img src="icons/averagingmaster.png" alt="" width="56" height="56">
+            <span class="info">
+              <strong data-en="Averaging Master">물타기 마스터</strong>
+              <span class="desc" data-en="Average price and return calculator">주식·코인 평균단가와 수익률 계산기</span>
+              <span class="store">Google Play</span>
+            </span>
+            <span class="arrow" aria-hidden="true">›</span>
+          </a>
+        </li>
+        <li class="app">
+          <a class="main" href="https://play.google.com/store/apps/details?id=com.magnificent.findodd" target="_blank" rel="noopener">
+            <img src="icons/findodd.png" alt="" width="56" height="56">
+            <span class="info">
+              <strong data-en="Find the Odd One">틀린 하나 찾기</strong>
+              <span class="desc" data-en="A focus test: spot the one that is different">단 하나 다른 것을 찾는 집중력 테스트</span>
+              <span class="store">Google Play</span>
+            </span>
+            <span class="arrow" aria-hidden="true">›</span>
+          </a>
+        </li>
+        <li class="app">
+          <a class="main" href="https://play.google.com/store/apps/details?id=com.magnificent.tootbox" target="_blank" rel="noopener">
+            <img src="icons/tootbox.png" alt="" width="56" height="56">
+            <span class="info">
+              <strong data-en="TootBox">TootBox</strong>
+              <span class="desc" data-en="Funny sound effects for pranks">장난치기 좋은 웃긴 효과음 모음</span>
+              <span class="store">Google Play</span>
+            </span>
+            <span class="arrow" aria-hidden="true">›</span>
+          </a>
+        </li>
+      </ul>
+    </main>
+    <footer>
+      <p>
+        <a href="https://apps.apple.com/developer/id6835008420" target="_blank" rel="noopener" data-en="App Store developer page">App Store 개발자 페이지</a>
+        <a href="https://play.google.com/store/apps/developer?id=DevDaddy" target="_blank" rel="noopener" data-en="Google Play developer page">Google Play 개발자 페이지</a>
+      </p>
+      <p>
+        <a href="mailto:devsnap.001@gmail.com" data-en="Contact">문의하기</a>
+        <a href="privacy.html" data-en="Privacy Policy">개인정보처리방침</a>
+      </p>
+    </footer>
+  </div>
 
-  <p>
-    This app ("we", "our", or "us") respects your privacy and is committed to protecting the information you share with us.<br/>
-    본 앱(이하 "당사")는 사용자의 개인정보를 중요하게 생각하며, 관련 법령을 준수하고 있습니다.
-  </p>
-
-  <h3>1. Data Collection / 수집하는 정보</h3>
-  <p>
-    We use <strong>Google Firebase Analytics</strong> to collect anonymous usage data.<br/>
-    당사는 <strong>Firebase Analytics</strong>를 사용하여 익명의 앱 사용 데이터를 수집합니다.
-  </p>
-  <p>
-    The collected data includes:<br/>
-    수집되는 정보는 다음과 같습니다:
-  </p>
-  <ul>
-    <li>Device information (model, OS version) / 기기 정보 (모델, 운영체제 버전)</li>
-    <li>App usage behavior / 앱 사용 행동 정보</li>
-    <li>Crash logs / 앱 크래시 로그</li>
-  </ul>
-  <p>No personally identifiable information (PII) is collected.<br/>
-     이름, 이메일 등 개인을 식별할 수 있는 정보는 수집되지 않습니다.
-  </p>
-
-  <h3>2. Use of Data / 수집한 정보의 사용 목적</h3>
-  <p>
-    The data is used solely for improving app performance and user experience.<br/>
-    수집된 정보는 앱 성능 개선 및 사용자 경험 향상을 위해서만 사용됩니다.
-  </p>
-
-  <h3>3. Data Security / 데이터 보안</h3>
-  <p>
-    All data is encrypted in transit and securely stored on Google Firebase servers.<br/>
-    모든 데이터는 전송 중 암호화되며, Google Firebase 서버에 안전하게 저장됩니다.
-  </p>
-
-  <h3>4. Data Sharing / 제3자 제공</h3>
-  <p>
-    The data is not shared with any third parties except Google Firebase for analytics purposes.<br/>
-    수집된 데이터는 분석을 위해 Google Firebase 외에 제3자에게 제공되지 않습니다.
-  </p>
-
-  <h3>5. Contact / 문의</h3>
-  <p>
-    If you have any questions or concerns about this Privacy Policy, please contact us at:<br/>
-    개인정보 보호 관련 문의는 아래 이메일로 연락주시기 바랍니다:<br/><br/>
-    📧 <strong>devsnap.001@gmail.com</strong>
-  </p>
-
-  <p>Last updated: 2025-05-17</p>
+  <script>
+    (() => {
+      const texts = [...document.querySelectorAll("[data-en]")].map(el => [el, el.textContent, el.dataset.en]);
+      const shots = [...document.querySelectorAll("[data-en-src]")].map(el => [el, el.getAttribute("src"), el.alt]);
+      const button = document.getElementById("lang");
+      const koTitle = document.title;
+      let lang;
+      const apply = next => {
+        lang = next;
+        const en = lang === "en";
+        document.documentElement.lang = lang;
+        document.title = en ? "Apps by DevDaddy" : koTitle;
+        texts.forEach(([el, ko, eng]) => el.textContent = en ? eng : ko);
+        shots.forEach(([el, src, alt]) => { el.src = en ? el.dataset.enSrc : src; el.alt = en ? el.dataset.enAlt : alt; });
+        button.textContent = en ? "한국어" : "EN";
+      };
+      let saved;
+      try { saved = localStorage.getItem("lang"); } catch {}
+      apply(saved || ((navigator.language || "ko").toLowerCase().startsWith("ko") ? "ko" : "en"));
+      button.addEventListener("click", () => {
+        apply(lang === "ko" ? "en" : "ko");
+        try { localStorage.setItem("lang", lang); } catch {}
+      });
+    })();
+  </script>
 </body>
 </html>
